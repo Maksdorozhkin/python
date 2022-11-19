@@ -15,7 +15,7 @@ def star():
 turtle.shape('turtle')
 turtle.shapesize(3)
 turtle.color('green', 'yellow')
-turtle.speed(50)
+turtle.speed(8)
 
 star()
 turtle.backward(200)
