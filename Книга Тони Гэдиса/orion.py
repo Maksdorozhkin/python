@@ -4,6 +4,9 @@ import turtle
 
 # задать размер окна
 turtle.setup(500, 600)
+turtle.bgcolor('black')
+turtle.pencolor('white')
+turtle.speed(1)
 
 # установить черепаху
 turtle.penup()
