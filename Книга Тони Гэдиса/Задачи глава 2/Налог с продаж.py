@@ -9,8 +9,8 @@ oll_tax = fed_tax + reg_tax
 oll_price = purchese + fed_tax + reg_tax
 # выводим полученные данные
 print(
-    f'Покупка: {purchese},\nФедеральный налог состатвил: {fed_tax}'
-    f'\nРегиональный налог составил: {reg_tax}'
-    f'\nИтого налог: {oll_tax}'
-    f'\nИтого к оплате: {oll_price}'
+    f'Покупка: {purchese},\n\tФедеральный налог состатвил: {fed_tax:.2f}'
+    f'\n\tРегиональный налог составил: {reg_tax:.2f}'
+    f'\n\tИтого налог: {oll_tax:.2f}'
+    f'\n\tИтого к оплате: {oll_price:.2f}'
 )
