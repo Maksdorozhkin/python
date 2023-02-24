@@ -1,5 +1,4 @@
-print('Hello Maks')
-
-print(10, 'Maks', True)
-print(dir(__builtins__))
-
+name = input("Enter your name:")
+age = input("Enter your age: ")
+city = input("Enter your cyti: ")
+print(name, age, city)
