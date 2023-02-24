@@ -1,3 +1,5 @@
 print('Hello Maks')
-print(2+2+8)
+
+print(10, 'Maks', True)
+print(dir(__builtins__))
 
