@@ -14,6 +14,6 @@ def sum_numbs(a, b):
 
 first_sum = sum_numbs(10, 5)
 print(first_sum)
-# print(sum_numbs(50.5, 20))
+print(sum_numbs(50.5, 20))
 #
 # print(sum_numbs(sum_numbs(50.5, 20),30))
