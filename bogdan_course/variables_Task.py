@@ -19,4 +19,3 @@ print(id(other_number))
 print(id(my_name))
 
 print(type(my_name))
-
