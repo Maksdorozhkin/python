@@ -9,7 +9,7 @@ print([1, 2, 3] == [1, 2, 3])
 
 db_is_avaible = False
 print(db_is_avaible)
-print(type(db_is_avaible))
+print(   type(db_is_avaible))
 
 db_is_avaible = True
 print(db_is_avaible)

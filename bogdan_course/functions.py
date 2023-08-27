@@ -26,12 +26,12 @@ def print_name(name):
     print(name)
 
 
-print_name('Maks')
+print_name('Maks'    )
 
 # далее  меняем print_name на число
 print_name = 10
 
 # и снова вызываем функцию
-print_name('Maks')
+print_name('Maksim')
 
 # такой код выдаст ошибку т.к. print_name теперь числ
