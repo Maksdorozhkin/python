@@ -83,4 +83,23 @@ print(sum(raitings)*len(raitings))
 other_raitings = [0.8, 0.8, 1980]
 print((raitings)+(other_raitings))
 
+# нарезка списков
+first_two_ratings = raitings[:2]
+print(first_two_ratings)
+print(raitings[1:-1])
+print(raitings[-2:])
 
+# копирование списка вариант 1
+my_cars = ['BMW', 'Lotus']
+copied_cars = my_cars[:]
+copied_cars.append("Audi")
+print(copied_cars)
+print(my_cars)
+# копирование списка вариант 2
+copied_cars_2 = my_cars.copy()
+copied_cars_2.append('UAZ')
+print(copied_cars_2)
+# вариант 3 
+copied_cars_3 = list(my_cars)
+copied_cars_3.append('Tatra')
+print(copied_cars_3)
