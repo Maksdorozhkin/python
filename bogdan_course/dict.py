@@ -52,3 +52,11 @@ print(my_favorite_gerl)
 # длинна словаря
 print(len(my_favorite_gerl))
 
+# метод get для получения для получения значений ключа (этот метод следует использовать всегда)
+# если уверены что ключ есть в словаре можно использовать вместо get квадратеые скобки 
+print(my_favorite_gerl.get('tits'))
+print(my_favorite_gerl.get('status', 0))
+
+my_dict = {}
+print(my_dict.__doc__)
+
