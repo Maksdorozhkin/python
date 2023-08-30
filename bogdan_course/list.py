@@ -103,3 +103,18 @@ print(copied_cars_2)
 copied_cars_3 = list(my_cars)
 copied_cars_3.append('Tatra')
 print(copied_cars_3)
+
+
+my_nums = [10, 50, 0, 5,]
+print(dir(my_nums))
+my_nums.insert(2, -5) # вставляяем третий элемент 
+print(my_nums)
+
+my_nums.clear() # очистить список
+print(my_nums)
+my_nums.extend('abc')
+print(my_nums)
+
+other_nums = my_nums.copy()
+print(other_nums)
+
