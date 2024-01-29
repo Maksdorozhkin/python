@@ -37,3 +37,8 @@ print(all_ratings)
 
 first_two_ratings = ratings[1:-1]
 print(first_two_ratings)
+
+# создаем новый список с теми же объектами
+
+list_clone = ratings[:]
+print(list_clone)
