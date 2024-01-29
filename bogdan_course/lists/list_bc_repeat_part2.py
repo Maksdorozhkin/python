@@ -12,3 +12,11 @@ print(post_ids)
 
 # конвертация в список
 
+greeting = 'Hi from madhouse'
+greeting_letters = list(greeting)
+print(greeting_letters)
+
+
+my_dict = {'a': 10, 'b': 20}
+my_dict_key = list(my_dict)
+print(my_dict_key)
