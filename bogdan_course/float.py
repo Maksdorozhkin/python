@@ -13,3 +13,4 @@ print(round(str_temperature))
 
 maks = input("веди что нить: ")
 print(maks)
+
