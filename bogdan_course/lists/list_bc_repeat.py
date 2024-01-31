@@ -29,3 +29,4 @@ new_fruit = 'pineapple'
 all_fruit=['my_fruit', 'other_fruit', 'new_fruit']
 print(all_fruit)
 
+
