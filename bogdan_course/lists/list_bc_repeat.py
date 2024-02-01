@@ -26,7 +26,12 @@ print(bikes.__len__())
 my_fruit = 'apple'
 other_fruit = 'banana'
 new_fruit = 'pineapple'
-all_fruit=['my_fruit', 'other_fruit', 'new_fruit']
+all_fruit = ['my_fruit', 'other_fruit', 'new_fruit']
 print(all_fruit)
 
+# Копирование списков
 
+all_fruit_copy = all_fruit[:]
+print(all_fruit_copy)
+all_fruit_copy2 = all_fruit.copy()
+print(all_fruit)
