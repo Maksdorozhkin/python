@@ -35,3 +35,16 @@ all_fruit_copy = all_fruit[:]
 print(all_fruit_copy)
 all_fruit_copy2 = all_fruit.copy()
 print(all_fruit)
+
+# списки практика
+res = my_bike.count('ducati')
+print(res)
+
+my_bike.append(5)
+
+my_bike.insert(2, -5)
+print(my_bike)
+my_bike.clear()
+print(my_bike)
+my_bike.extend('abs')
+print(my_bike)

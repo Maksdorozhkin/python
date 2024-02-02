@@ -83,6 +83,9 @@ print(sum(raitings)*len(raitings))
 other_raitings = [0.8, 0.8, 1980]
 print((raitings)+(other_raitings))
 
+# расширить список элементами второго списка
+raitings.extend(other_raitings)
+
 # нарезка списков
 first_two_ratings = raitings[:2]
 print(first_two_ratings)
