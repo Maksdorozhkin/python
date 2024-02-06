@@ -110,7 +110,7 @@ print(copied_cars_3)
 
 my_nums = [10, 50, 0, 5,]
 print(dir(my_nums))
-my_nums.insert(2, -5) # вставляяем третий элемент 
+my_nums.insert(2, -5) # вставляем третий элемент
 print(my_nums)
 
 my_nums.clear() # очистить список
