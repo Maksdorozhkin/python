@@ -41,3 +41,18 @@ print(res)
 def my_pass_function():
     pass
 print(my_pass_function())
+
+
+# передача неизменяемых объектов в функцию
+
+def my_fn2(a, b):
+    a2 = a + 1
+    c2 = a + b
+    return c2
+
+num_one = 10
+num_two = 5
+
+res2 = my_fn2(num_one, num_two)
+print(res2)
+print(num_one)
