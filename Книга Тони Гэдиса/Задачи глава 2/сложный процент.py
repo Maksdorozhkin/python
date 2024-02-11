@@ -6,3 +6,4 @@ deposite_term = float(input('Введите срок депозита в год�
 result = (deposite * (1 + (a_i_r / 100) / accrual_of_interest) ** (accrual_of_interest * deposite_term))
 
 print(f'{result:.2f}')
+print(type(result))
