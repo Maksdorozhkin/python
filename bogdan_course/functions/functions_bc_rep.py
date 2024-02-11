@@ -11,7 +11,7 @@ c = a + b
 print(c)
 
 
-def sum(a, b):
+def sum_(a, b):
     c = a + b
     print(c)
 
@@ -19,14 +19,14 @@ def sum(a, b):
 a = 20
 b = 10
 
-sum(a, b)
+sum_(a, b)
 
 a = 9
 b = 10
 
-sum(a, b)
+sum_(a, b)
 
-print(type(sum(a, b)))
+print(type(sum_(a, b)))
 
 
 def my_fn(a1, b1):
@@ -98,3 +98,16 @@ new_person = increase_person_age_copy(person_one)
 
 print(new_person['age'])
 print(person_one['age'])
+
+
+# объединение аргументов функции в кортеж
+
+def sum_nums(*args):
+    # print(args)
+    # print(type(args))
+    # print(args[0])
+
+    return sum(args)
+
+
+print(sum_nums(2, 2, 2, 2))
