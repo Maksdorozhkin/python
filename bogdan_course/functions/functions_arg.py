@@ -10,6 +10,7 @@ print(info)
 
 
 # объединение аргументов с ключевыми словами в словарь
+# аргументы с ключевыми словами
 
 def post_info(**person):
     print(person)
@@ -23,3 +24,4 @@ def post_info(**person):
 
 info = post_info(name='Maksim', posts_qty=100)
 print(info)
+

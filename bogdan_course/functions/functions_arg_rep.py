@@ -30,3 +30,16 @@ def get_posts_info(name, posts_qty):
 
 info = get_posts_info('Maks', 25)
 print(info)
+
+# объединение аргументов в словарь
+
+def get_post_info(**person):
+    print(person)
+    print(type(person))
+    info = (
+        f"{person['name']} wrote "
+        f"{person['post_qty']} posts"
+    )
+    return info
+info = get_post_info(name='Maks', post_qty=32)
+print(info)
