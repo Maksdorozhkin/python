@@ -32,6 +32,7 @@ info = get_posts_info('Maks', 25)
 print(info)
 
 # объединение аргументов в словарь
+# нельзя использовать позиционные аргументы
 
 def get_post_info(**person):
     print(person)
@@ -41,5 +42,5 @@ def get_post_info(**person):
         f"{person['post_qty']} posts"
     )
     return info
-info = get_post_info(name='Maks', post_qty=32)
+info = get_post_info(name='Maks', post_qty=32, id=1388)
 print(info)
