@@ -111,3 +111,46 @@ def sum_nums(*args):
 
 
 print(sum_nums(2, 2, 2, 2))
+
+
+# значение параметров функции по умолчанию multiplier=1
+
+def mult_by_factor(value, multiplier=1):
+    return value * multiplier
+
+
+print(mult_by_factor(10, 2))
+print(mult_by_factor(5))
+
+from datetime import date
+
+
+def get_weekday():
+    return date.today().strftime('%A')
+
+
+print(get_weekday())
+
+
+def get_month():
+    return date.today().strftime('%B')
+
+
+print(get_month())
+
+
+def create_new_post(post, weekday=get_weekday(), date=get_month()):
+    post_copy = post.copy()
+    post_copy['create_on_weekday'] = weekday
+    post_copy['month'] = date
+    return post_copy
+
+
+initial_post = {
+    'id': 243,
+    'autor': 'Maks',
+}
+
+post_with_weekday = create_new_post(initial_post)
+
+print(post_with_weekday)
