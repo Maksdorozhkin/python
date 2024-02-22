@@ -27,4 +27,3 @@ print(set_one.__eq__(set_two))
 print({True, 'hi', '😜😜😜', 10.5} is set_two)
 print(set_one is set_two)
 print('hi' in set_two)
-
