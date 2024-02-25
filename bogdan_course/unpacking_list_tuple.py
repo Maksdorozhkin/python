@@ -39,3 +39,16 @@ print(user_info(user_profile['name'], user_profile['comments_qty']))
 
 print(user_info(name=user_profile['name'],
       comments_qty=user_profile['comments_qty']))
+
+# распаковка списка в позиционные аргументы
+
+user_data = ['Maks', 43]
+
+
+def maks_data(name, com_qty):
+    if not com_qty:
+        return f"{name} has no comments"
+    return f"{name} has {com_qty} comments"
+
+
+print(maks_data(*user_data))
