@@ -5,7 +5,6 @@ my_fruits = ['apple', 'banana', 'lime']
 my_apple, my_banana, my_lime = my_fruits
 print(my_apple)
 
-
 # распаковка с помощью *
 
 apple, *list_fruits = my_fruits
@@ -38,7 +37,7 @@ print(user_info(user_profile['name'], user_profile['comments_qty']))
 # тоже самое с ключевыми словами
 
 print(user_info(name=user_profile['name'],
-      comments_qty=user_profile['comments_qty']))
+                comments_qty=user_profile['comments_qty']))
 
 # распаковка списка в позиционные аргументы
 
@@ -52,3 +51,27 @@ def maks_data(name, com_qty):
 
 
 print(maks_data(*user_data))
+
+# task создать список словарей (3 словаря по 2 ключа) с помощью оператора распаковки
+# списков создать три переменные каждая из которых будет содержать один словарь далее.
+# Cоздайте функцию, которая будет принимать два аргумента в вызове функции распаковать словарь функцию вызвать три раза
+
+my_list_dikt = [
+    {'bike': 'kawasaki',
+     'color': 'black'},
+    {'bike': 'ducati',
+     'color': 'red'},
+    {'bike': 'honda',
+     'color': 'blue'}]
+
+bike1, bike2, bike3 = my_list_dikt
+
+
+def love_bikes(bike, color):
+    return f"{bike}, most be {color} color"
+
+
+print(bike1)
+print(love_bikes(**bike1))
+print(love_bikes(**bike2))
+print(love_bikes(**bike3))
