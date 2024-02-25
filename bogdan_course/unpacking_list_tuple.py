@@ -22,6 +22,7 @@ user_profile = {
     'comments_qty': 25,
 }
 
+
 def user_info(name, comments_qty=0):
     if not comments_qty:
         return f"{name} has no comments"
@@ -29,3 +30,12 @@ def user_info(name, comments_qty=0):
 
 
 print(user_info(**user_profile))
+
+# можно передать значения ключей словаря без распаковки
+
+print(user_info(user_profile['name'], user_profile['comments_qty']))
+
+# тоже самое с ключевыми словами
+
+print(user_info(name=user_profile['name'],
+      comments_qty=user_profile['comments_qty']))
