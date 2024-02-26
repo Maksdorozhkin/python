@@ -78,8 +78,7 @@ def route_info(route_dict):
         return f"Distance to your destination is {route_dict['distance']}"
     if (route_dict.get('speed') and type(route_dict['speed']) is int) and (route_dict.get('time') and type(route_dict['time']) is int):
         return f"Distance to your destination is {route_dict['speed'] * route_dict['time']}"
-    else:
-        return "No distance info is available"
+    return "No distance info is available"
 
 
 route_dict1 = {
@@ -96,7 +95,7 @@ route_dict2 = {
 
 route_dict3 = {
     'distance': 100.1,
-    'time': 2,
+    'my_time': 2,
 }
 print(route_info(route_dict=route_dict1))
 print(route_info(route_dict=route_dict2))
