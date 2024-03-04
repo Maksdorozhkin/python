@@ -33,3 +33,11 @@ for sets in video_id:
 my_name = 'Maksim Dorozhkin'
 for symbol in my_name:
     print(symbol.upper())
+
+
+# for in для диапазонов
+for num in range(5):
+    print(num)
+
+for nums in range(3, 10, 2):
+    print(nums)
