@@ -48,11 +48,11 @@ print(filter_list1(data1=[True, 1, 2, 3, 1, 2,
 
 
 def filter_list2(data2, type_data2):
-    def chec_element_type(elem):
-        return isinstance(elem, type_data2)
+    def check_element_type(elem):
+        return type(elem) is type_data2
 
-    return list(filter(chec_element_type, data2))
+    return list(filter(check_element_type, data2))
 
 
-res = filter_list2(data2=[1, 2, 3, 4, 3.1, True, 'abc'], type_data2=float)
+res = filter_list2(data2=[1, 2, 3, 4, 3.1, True, 'abc', False], type_data2=int)
 print(res)
