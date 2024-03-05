@@ -1,5 +1,3 @@
-
-
 # функция которая принимает словарь, конвертирует его в список кортежей и если в нем есть значение ключа целое число то умножает его на 2
 def dict_to_list(dict_to_convert):
     list_for_conversion = []
@@ -14,7 +12,6 @@ print(dict_to_list({'a': 2, 'b': True}))
 
 
 # Задача функция фильтрует список и возвращает новый список с данными определенного типа
-
 def filter_list(data, type_data):
     new_list = []
     for item in data:
@@ -59,7 +56,6 @@ print(res)
 
 
 # тоже самое только с помощью lambda функции
-
 def filter_list3(data3, type_data3):
     return list(filter(lambda elem2: type(elem2) is type_data3, data3))
 
