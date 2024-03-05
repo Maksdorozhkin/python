@@ -56,3 +56,13 @@ def filter_list2(data2, type_data2):
 
 res = filter_list2(data2=[1, 2, 3, 4, 3.1, True, 'abc', False], type_data2=int)
 print(res)
+
+
+# тоже самое только с помощью lambda функции
+
+def filter_list3(data3, type_data3):
+    return list(filter(lambda elem2: type(elem2) is type_data3, data3))
+
+
+res = filter_list3(data3=[1, 2, 3, 4, 3.1, True, 'abc', False], type_data3=int)
+print(res)
