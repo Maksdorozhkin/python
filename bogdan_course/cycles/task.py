@@ -25,3 +25,34 @@ def filter_list(data, type_data):
 
 print(filter_list(data=[True, 1, 2, 3, 1, 2,
       'abc', 'xyz', False], type_data=str))
+print(filter_list(data=[True, 1, 2, 3, 1, 2,
+      'abc', 'xyz', False], type_data=bool))
+print(filter_list(data=[True, 1, 2, 3, 1, 2,
+      'abc', 'xyz', False], type_data=int))
+
+# тоже решение только с помощью isinstance данное решение не рекомендуется т.к. вернет еще и bool т.к. true в python это единица а false 0
+
+
+def filter_list1(data1, type_data1):
+    new_list1 = []
+    for item1 in data1:
+        if isinstance(item1, type_data1):
+            new_list1.append(item1)
+    return new_list1
+
+
+print(filter_list1(data1=[True, 1, 2, 3, 1, 2,
+      'abc', 'xyz', False], type_data1=int))
+
+# решение с помощью встроенной функции filterlist
+
+
+def filter_list2(data2, type_data2):
+    def chec_element_type(elem):
+        return isinstance(elem, type_data2)
+
+    return list(filter(chec_element_type, data2))
+
+
+res = filter_list2(data2=[1, 2, 3, 4, 3.1, True, 'abc'], type_data2=float)
+print(res)
