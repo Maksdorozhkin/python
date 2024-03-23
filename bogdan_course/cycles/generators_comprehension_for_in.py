@@ -15,3 +15,4 @@ n = [3, 5, 10]
 gen = (n1 * n1 for n1 in n)
 squares2 = list(gen)
 print(squares2)
+# Так же его можно конвертировать в tuple
