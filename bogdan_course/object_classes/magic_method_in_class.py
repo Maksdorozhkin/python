@@ -19,4 +19,3 @@ s_comment.upvote()
 s_comment.upvote()
 
 print(f_comment + s_comment)
-print(f_comment())
