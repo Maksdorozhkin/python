@@ -17,5 +17,5 @@ def my_function(a, b):
     return (a, b)
 
 
-my_function(100, 50)
-# print(result)
+result = my_function(100, 50)
+print(result)
