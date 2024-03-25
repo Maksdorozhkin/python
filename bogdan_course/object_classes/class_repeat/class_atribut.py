@@ -23,5 +23,5 @@ print(my_comment.total_comment)
 my_comment.total_comment = 10
 print(Comment.total_comment)  # значение атрибута класса не изменилось
 print(my_comment.total_comment)  # значение изменилось на 10
-Comment.total_comment = 10
+Comment.total_comment = 10  # меняем значение собственного атрибута класса
 print(Comment.total_comment)
