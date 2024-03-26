@@ -34,6 +34,6 @@ def my_fn3(f, g):
     print(f, g)
     print(dir())
 
-my_fn3(3,5)
-print(dir())
 
+my_fn3(3, 5)
+print(dir())
