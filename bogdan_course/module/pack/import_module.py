@@ -15,5 +15,7 @@ def my_fn():
     pass
 
 
-print('import_module.py', __name__)
-print('import_module.py', __name__ == '__main__')
+# print('import_module.py', __name__)
+# print('import_module.py', __name__ == '__main__')
+
+a = 10
