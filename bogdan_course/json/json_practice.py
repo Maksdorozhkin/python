@@ -15,5 +15,7 @@ print(my_list)
 
 
 # обратная конвертация
-json_from_dict = json.dumps(sneakers)
+# ident=4 ставит отступы для удобства чтения json файла
+json_from_dict = json.dumps(sneakers, indent=1)
 print(json_from_dict)
+print(type(json_from_dict))
