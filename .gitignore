@@ -1,5 +1,7 @@
 .DS_Store
 .idea
 coding_practics/mvenv
-
+venv/
 .vscode/settings.json
+.mypy_cache/
+.gitignore
