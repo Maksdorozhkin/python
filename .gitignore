@@ -5,3 +5,4 @@ venv/
 .vscode/settings.json
 .mypy_cache/
 .gitignore
+.fleet
