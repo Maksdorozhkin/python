@@ -1,6 +1,6 @@
 # создаем словарь с помощью функции zip
-english = 'Monday', 'Tuesday', 'Wednesday'
-french = 'Lundi', 'Mardi', 'Mercredi'
+english = 'dog', 'cat', 'walrus'
+french = 'chien', 'chat', 'morse'
 new_dict = zip(english, french)
 print(type(new_dict))
 new_dict = dict(new_dict)
